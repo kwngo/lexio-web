@@ -1,0 +1,53 @@
+// We can import bulma into the project using Sass.
+$body-font-size: 0.9em;
+@import "../node_modules/bulma/bulma.sass";
+
+body {
+  background: #f9f9f9;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.page {
+  padding: 2em 0;
+}
+
+
+.app {
+  margin: 0 auto;
+  width: 80%;
+  height: 250px;
+  padding: 1em;
+  cursor: pointer;
+  border: 1px solid #d5d5d5;
+  &-logo {
+    height: 100px;
+  }
+  &:hover {
+    background: #f1f1f1;
+  }
+}
+.logo-center {
+  display: block;
+  margin: 0 auto;
+}
+
+.search {
+  width: 400px;
+}
+
+.button {
+  width:100%;
+}
+.form {
+  width: 400px;margin:0 auto;
+  background: #fff;
+  padding: 0.5em 0em;
+  border-radius: 3px;
+  border: 1px solid #f1f1f1;
+}
+
+.form-inner {
+  width: 85%;
+  margin: 0 auto;
+  padding: 4em 0;
+}
