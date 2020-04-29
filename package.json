@@ -10,6 +10,8 @@
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "bulma": "^0.8.2",
+    "isomorphic-unfetch": "^3.0.0",
+    "micro": "^9.3.4",
     "next": "9.3.2",
     "node-sass": "^4.13.1",
     "react": "16.13.1",
