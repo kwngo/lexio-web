@@ -11,7 +11,6 @@ body {
   padding: 2em 0;
 }
 
-
 .app {
   margin: 0 auto;
   width: 80%;
@@ -26,6 +25,95 @@ body {
     background: #f1f1f1;
   }
 }
+.hero {
+  background: #1B1D21;
+  color: #43BD66;
+  padding: 6em 0;
+  .title {
+    color: #43BD66;
+    font-weight: 500;
+  }
+  .subtitle {
+    font-size: 1em;
+    color: #ccc;
+    letter-spacing: 1px;
+  }
+}
+.navbar.home-navbar {
+  background: #1B1D21;
+  color: #43BD66;
+  .navbar-item {
+    color: #43BD66;
+    &:hover {
+      color: #1A2c23;
+      background: none;
+    }
+  }
+  .navbar-end {
+    .navbar-item a {
+      color: #43BD66;
+      &:hover {
+        color: #1A2c23;
+        background: none;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  a.navbar-item {
+    color: #43BD66;
+    font-size: 1.2em;
+    font-weight: 600;
+    &:hover {
+      color: #43BD66;
+    }
+  }
+
+}
+.navbar.user-navbar {
+  background-color: #1A2c23;
+  border-bottom: 1px solid #15231C;
+  .navbar-item {
+    color: #43BD66;
+  }
+  .navbar-end {
+  }
+}
+
+.navbar-brand {
+  a.navbar-item {
+    color: #43BD66;
+    font-size: 1.2em;
+    font-weight: 600;
+    &:hover {
+      color: #43BD66;
+    }
+  }
+
+}
+
+.sub-navbar {
+  background: #f1f1f1;
+  padding: 0.5em 0;
+}
+.team-name {
+  color: #43BD66;
+  font-weight: 600;
+}
+
+.navbar .input {
+  background-color: #1E3829;
+  color: #43BD66;
+  border: 1px solid #43BD66;
+  border-radius: 5px;
+  &::placeholder {
+    color: #43BD66;
+  }
+
+}
+
+
 .logo-center {
   display: block;
   margin: 0 auto;
@@ -35,8 +123,35 @@ body {
   width: 400px;
 }
 
+.input, .button {
+  font-size: 0.9rem;
+}
+
+.input {
+  &:hover {
+    border: 1px solid #43BD66;
+  }
+
+}
+.label {
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.input {
+  border-radius: 1px;
+}
+
 .button {
+  font-weight: 500;
   width:100%;
+  color: #43BD66;
+  background: #1A2C23;
+  border-radius: 1px;
+  border: 0;
+  &:hover {
+    color: #fff;
+  }
 }
 .form {
   width: 400px;margin:0 auto;

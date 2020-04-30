@@ -79,22 +79,11 @@ class Signup extends Component {
   render() {
     return (
       <Layout>
-        <div class="page container">
+        <section class="hero is-fullheight-with-navbar">
+        <div class="container">
           <form class="form" onSubmit={this.handleSubmit}>
           <div className="form-inner">
           <h4 className="title is-4">Sign up</h4>
-          <div class="field">
-            <label class="label">First name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="First name" value={this.state.firstName} onChange={this.handleFirstNameChange} />
-            </div>
-          </div>
-          <div class="field">
-            <label class="label">Last name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Last name" value={this.state.lastName} onChange={this.handleLastNameChange}/>
-            </div>
-          </div>
           <div class="field">
             <label class="label">Username</label>
             <div class="control">
@@ -130,12 +119,13 @@ class Signup extends Component {
           </div>
           <div class="field">
             <div class="control">
-              <button class="button is-link" type="submit">Create a free account</button>
+              <button class="button" type="submit">Create a free account</button>
             </div>
           </div>
           </div>
           </form>
         </div>
+        </section>
       </Layout>
     )
   }

@@ -21,11 +21,15 @@ export default ({ children }) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
       </Head>
       <header>
-        <nav className="navbar" role="navigation" aria-label="main navigation">
+        <nav className="navbar user-navbar" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
-            <a className="navbar-item">
-              <img src="/static/pic.png" />
-            </a>
+            <div className="navbar-start">
+              <Link prefetch href="/">
+                <a className="navbar-item">
+                Lexio
+                </a>
+              </Link>
+            </div>
           </div>
           <div id="navbarmenu" className="navbar-menu">
             <div className="navbar-start">
@@ -38,18 +42,7 @@ export default ({ children }) => {
             </div>
             <div className="navbar-end">
               <div className="navbar-item">
-                <div className="buttons">
-                  <Link href="/login" passHref>
-                  Login
-                  </Link>
-                </div>
-              </div>
-              <div className="navbar-item">
-                <div className="buttons">
-                  <Link href="/signup" passHref>
-                  Signup
-                  </Link>
-                </div>
+                kwngo
               </div>
             </div>
           </div>

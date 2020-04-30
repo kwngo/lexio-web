@@ -21,17 +21,15 @@ export default ({ children }) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
       </Head>
       <header>
-        <nav className="navbar" role="navigation" aria-label="main navigation">
+        <nav className="navbar home-navbar" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
-            <a className="navbar-item">
-              <img src="/static/pic.png" />
-            </a>
-            <a id="burger" onClick={toggleStyles} 
-                role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarmenu">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
+            <div className="navbar-start">
+              <Link prefetch href="/">
+                <a className="navbar-item">
+                Lexio
+                </a>
+              </Link>
+            </div>
           </div>
           <div id="navbarmenu" className="navbar-menu">
             <div className="navbar-start">
@@ -44,29 +42,20 @@ export default ({ children }) => {
             </div>
             <div className="navbar-end">
               <div className="navbar-item">
-                <div className="buttons">
-                  <Link href="/login" passHref>
-                  Login
-                  </Link>
-                </div>
+                <Link href="/login" passHref>
+                Login
+                </Link>
               </div>
               <div className="navbar-item">
-                <div className="buttons">
-                  <Link href="/signup" passHref>
-                  Signup
-                  </Link>
-                </div>
+                <Link href="/signup" passHref>
+                Signup
+                </Link>
               </div>
             </div>
           </div>
         </nav>
       </header>
       {children}
-      <footer className="footer">
-        <div className="content has-text-centered">
-          <span>I'm the footer</span>
-        </div>
-      </footer>
     </div>
   )
 }
