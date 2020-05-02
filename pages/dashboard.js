@@ -9,15 +9,15 @@ const Dashboard = () => (
         <nav class="sub-navbar level">
             <div class="level-left">
               <div class="level-item">
-                <span className="team-name">
+                <p className="button team-name">
                 Team name
-                </span>
+                </p>
               </div>
             </div>
 
             <div class="level-right">
               <Link href="/new-app">
-                <p class="level-item"><a class="button">New</a></p>
+                <p class="level-item"><a class="button dashboard-button">New</a></p>
               </Link>
             </div>
         </nav>

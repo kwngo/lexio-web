@@ -77,8 +77,9 @@ body {
 
 }
 .navbar.user-navbar {
-  background: #AADAD9;
-  border-bottom: 1px solid #f9f9f9;
+  border-bottom: 1px solid #2C6175;
+  background: #EDF9F5;
+
   .navbar-item {
     color: #222;
   }
@@ -97,17 +98,23 @@ body {
   background: #fff;
   padding: 0.5em 0;
 }
+
 .team-name {
-  color: #1D1C1D;
-  font-weight: 600;
+  background: #EDF9F5;
+  color: #2C6175;
+  border: 1px solid #2C6175;
+  &:hover {
+    color: #2C6175;
+    border: 1px solid #2C6175;
+    opacity: 0.75;
+  }
 }
 
 .navbar .input {
   background: #AADAD9;
+  color: #222;
   border-radius: 3px;
   border: 1px solid #2C6175;
-  color: #222;
-  border-radius: 4px;
   &::placeholder {
     color: #2C6175;
   }
@@ -143,7 +150,7 @@ body {
   letter-spacing: 1px;
 }
 .input {
-  background: #AADAD9;
+  background: #FFF;
   border-radius: 3px;
   border: 1px solid #2C6175;
 }
@@ -155,7 +162,6 @@ body {
   background: #2C6175;
   border-radius: 3px;
   letter-spacing: 1px;
-  margin-top: 1em;
   border: 0;
   &:hover {
     color: #fff;
@@ -237,4 +243,15 @@ body {
   font-size: 2em;
   text-align: center;
   margin-bottom: 1em;
+}
+
+.dashboard-button {
+  background: #EDF9F5;
+  color: #2C6175;
+  border: 1px solid #2C6175;
+  &:hover {
+    color: #2C6175;
+    border: 1px solid #2C6175;
+    opacity: 0.75;
+  }
 }

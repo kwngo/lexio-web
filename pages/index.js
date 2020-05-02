@@ -13,7 +13,7 @@ const Home = () => (
           Unleash your inner startup
         </h1>
         <h2 class="subtitle">
-          Build your business like a startup. 
+          Build your law firm like a startup. 
           Lexio is the best platform <br/>for building with
           modern architectures, innovating quickly, <br/>
           and scaling precisely to meet demand.
