@@ -1,9 +1,9 @@
 // We can import bulma into the project using Sass.
-$body-font-size: 0.9em;
+@import "../node_modules/nprogress/nprogress.css";
 @import "../node_modules/bulma/bulma.sass";
 
 body {
-  background: #f9f9f9;
+  font-size: 0.9em;
   font-family: 'Helvetica', sans-serif;
 }
 
@@ -26,24 +26,29 @@ body {
   }
 }
 .hero {
-  background: #1B1D21;
-  color: #43BD66;
+  background: #EDF9F5;
+  height: 710px;
   padding: 6em 0;
   .title {
-    color: #43BD66;
-    font-weight: 500;
+    font-size: 3.5em;
+    color: #2C6175;
+    font-weight: 600;
+    margin-bottom: 1em;
+    text-align: center;
   }
   .subtitle {
-    font-size: 1em;
-    color: #ccc;
+    font-size: 1.5em;
+    color: #555;
+    font-weight: 500;
+    text-align: center;
     letter-spacing: 1px;
   }
 }
 .navbar.home-navbar {
-  background: #1B1D21;
-  color: #43BD66;
+  background: #EDF9F5;
   .navbar-item {
-    color: #43BD66;
+    font-weight: 600;
+    letter-spacing: 1px;
     &:hover {
       color: #1A2c23;
       background: none;
@@ -51,7 +56,7 @@ body {
   }
   .navbar-end {
     .navbar-item a {
-      color: #43BD66;
+      color: #333;
       &:hover {
         color: #1A2c23;
         background: none;
@@ -62,7 +67,7 @@ body {
 
 .navbar-brand {
   a.navbar-item {
-    color: #43BD66;
+    color: #222;
     font-size: 1.2em;
     font-weight: 600;
     &:hover {
@@ -72,43 +77,39 @@ body {
 
 }
 .navbar.user-navbar {
-  background-color: #1A2c23;
-  border-bottom: 1px solid #15231C;
+  background: #AADAD9;
+  border-bottom: 1px solid #f9f9f9;
   .navbar-item {
-    color: #43BD66;
+    color: #222;
   }
   .navbar-end {
   }
 }
 
-.navbar-brand {
-  a.navbar-item {
-    color: #43BD66;
-    font-size: 1.2em;
-    font-weight: 600;
-    &:hover {
-      color: #43BD66;
-    }
-  }
-
+.dashboard-head {
+  border-bottom: 1px solid #F1F1F1;
+  padding: 0.5em 0;
 }
-
 .sub-navbar {
-  background: #f1f1f1;
+  .container {
+    width: 80%;
+  }
+  background: #fff;
   padding: 0.5em 0;
 }
 .team-name {
-  color: #43BD66;
+  color: #1D1C1D;
   font-weight: 600;
 }
 
 .navbar .input {
-  background-color: #1E3829;
-  color: #43BD66;
-  border: 1px solid #43BD66;
-  border-radius: 5px;
+  background: #AADAD9;
+  border-radius: 3px;
+  border: 1px solid #2C6175;
+  color: #222;
+  border-radius: 4px;
   &::placeholder {
-    color: #43BD66;
+    color: #2C6175;
   }
 
 }
@@ -124,10 +125,13 @@ body {
 }
 
 .input, .button {
-  font-size: 0.9rem;
+  font-size: 0.9em;
 }
 
 .input {
+  &::placeholder {
+    color: #2C6175;
+  }
   &:hover {
     border: 1px solid #43BD66;
   }
@@ -139,15 +143,19 @@ body {
   letter-spacing: 1px;
 }
 .input {
-  border-radius: 1px;
+  background: #AADAD9;
+  border-radius: 3px;
+  border: 1px solid #2C6175;
 }
 
 .button {
-  font-weight: 500;
+  font-weight: 600;
   width:100%;
-  color: #43BD66;
-  background: #1A2C23;
-  border-radius: 1px;
+  color: #FFF;
+  background: #2C6175;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  margin-top: 1em;
   border: 0;
   &:hover {
     color: #fff;
@@ -155,14 +163,78 @@ body {
 }
 .form {
   width: 400px;margin:0 auto;
-  background: #fff;
   padding: 0.5em 0em;
-  border-radius: 3px;
-  border: 1px solid #f1f1f1;
+  border-radius: 1px;
 }
 
 .form-inner {
   width: 85%;
   margin: 0 auto;
   padding: 4em 0;
+}
+
+.select {
+  width: 100%;
+}
+
+.select-item {
+  width: 100%;
+}
+
+.container { 
+  width: 70%;
+}
+
+.new-app-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.app-item {
+  font-weight: 600;
+  border: 1px solid #111;
+  padding: 0.5em;
+}
+
+.app-page-body {
+  padding: 2em 0;
+}
+
+.app-page-activity {
+  margin: 0;
+}
+.activity-heading {
+  margin-bottom: 1em; 
+  font-weight: 600;
+}
+.app-page-time {
+  color: #999;
+}
+
+.home-heading {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.home-context {
+  font-size: 1.2em;
+}
+
+.home-body {
+  background: #fff;
+  padding: 4em 0;
+  height: 400px;
+  .title{
+    text-align: center;
+  }
+}
+
+.hero.signup-hero {
+  padding-top: 0;
+}
+
+.signup-title, .login-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
 }

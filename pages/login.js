@@ -35,8 +35,8 @@ class Login extends Component {
         body: JSON.stringify({email, password})
       })
       if(response.ok) {
-        console.log(response.headers)
-        // login()
+        console.log(response.body)
+        login()
       } else {
         console.log("Login failed.")
         let error = new Error(response.statusText)
@@ -58,7 +58,7 @@ class Login extends Component {
         <div class="container">
           <form class="form" onSubmit={this.handleSubmit}>
           <div className="form-inner">
-          <h4 className="title is-4">Log in to your account</h4>
+          <h4 className="login-title">Log in to your account</h4>
           <div class="field">
             <label class="label">Email</label>
             <div class="control">

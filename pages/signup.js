@@ -79,11 +79,11 @@ class Signup extends Component {
   render() {
     return (
       <Layout>
-        <section class="hero is-fullheight-with-navbar">
+        <section class="hero signup-hero is-fullheight-with-navbar">
         <div class="container">
           <form class="form" onSubmit={this.handleSubmit}>
           <div className="form-inner">
-          <h4 className="title is-4">Sign up</h4>
+          <h4 className="signup-title">Sign up</h4>
           <div class="field">
             <label class="label">Username</label>
             <div class="control">
@@ -119,7 +119,7 @@ class Signup extends Component {
           </div>
           <div class="field">
             <div class="control">
-              <button class="button" type="submit">Create a free account</button>
+              <button class="button" type="submit">Create your account</button>
             </div>
           </div>
           </div>

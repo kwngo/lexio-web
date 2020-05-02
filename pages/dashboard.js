@@ -1,9 +1,10 @@
 import Layout from '../components/userLayout'
+import Link from 'next/link'
 
 
 const Dashboard = () => (
   <Layout>
-    <div class="sub-navbar">
+    <div class="dashboard-head">
       <div class="container">
         <nav class="sub-navbar level">
             <div class="level-left">
@@ -15,10 +16,14 @@ const Dashboard = () => (
             </div>
 
             <div class="level-right">
-              <p class="level-item"><a class="button">New</a></p>
+              <Link href="/new-app">
+                <p class="level-item"><a class="button">New</a></p>
+              </Link>
             </div>
         </nav>
       </div>
+    </div>
+    <div class="dashboard-body">
     </div>
   </Layout>
 

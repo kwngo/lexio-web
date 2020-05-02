@@ -10,3 +10,6 @@ export const logout = () => {
   cookie.remove("token");
   Router.push("/login");
 };
+export const newApp = () => {
+  Router.push('/app-page')
+}
