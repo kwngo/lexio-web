@@ -1,0 +1,10 @@
+.chart {
+ height:50vh;
+ background: white;
+  transition: 0.3s;
+  margin: 1em 0;
+}
+
+.chart:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

@@ -1,6 +1,7 @@
 // We can import bulma into the project using Sass.
 @import "../node_modules/nprogress/nprogress.css";
 @import "../node_modules/bulma/bulma.sass";
+@import "../components/Chart/chart.css";
 
 body {
   font-size: 0.9em;
@@ -187,7 +188,7 @@ body {
   width: 100%;
 }
 
-.container { 
+.container {
   width: 70%;
 }
 
@@ -210,7 +211,7 @@ body {
   margin: 0;
 }
 .activity-heading {
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
   font-weight: 600;
 }
 .app-page-time {
@@ -271,4 +272,9 @@ body {
   display: block;
   color: #888;
   margin: 0.5em 0;
+}
+
+.chart-title {
+  font-size: 1.1em;
+  font-weight: 600;
 }
