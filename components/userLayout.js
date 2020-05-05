@@ -24,7 +24,7 @@ export default ({ children }) => {
         <nav className="navbar user-navbar" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
             <div className="navbar-start">
-              <Link prefetch href="/">
+              <Link prefetch href="/dashboard">
                 <a className="navbar-item">
                 Lexio
                 </a>
