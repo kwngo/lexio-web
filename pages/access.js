@@ -35,6 +35,7 @@ class Access extends Component {
             <tr>
               <th>Collaborators</th>
               <th>Role</th>
+              <th>Group</th>
             </tr>
           </thead>
           <tbody>
@@ -43,9 +44,15 @@ class Access extends Component {
               <td>
                 Admin
               </td>
+              <td>Staff</td>
             </tr>
           </tbody>
           </table>
+
+        <form>
+          <input class="input" type="text" placeholder="Email addresses" />
+          <button class="button" type="submit">Add collaborator</button>
+        </form>
         </div>
         </div>
       </Layout>

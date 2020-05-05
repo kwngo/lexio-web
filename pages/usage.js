@@ -38,6 +38,7 @@ const Usage = () => (
             <li><Link href="/dashboard"><a>Overview</a></Link></li>
             <li><Link href="/usage"><a>Usage</a></Link></li>
             <li><Link href="/activity"><a>Activity</a></Link></li>
+            <li><Link href="/access"><a>Access</a></Link></li>
             <li><a href="#">Settings</a></li>
           </ul>
         </div>
