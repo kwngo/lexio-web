@@ -8,13 +8,8 @@ class Dashboard extends Component {
   constructor(props) {
     super(props)
     this.state = {selected: 'Docassemble', open: false}
-    this.onSelect = this.onSelect.bind(this)
     this.handleOnClick = this.handleOnClick.bind(this)
     this.handleClickOutside = this.handleClickOutside.bind(this)
-  }
-
-  onSelect(event) {
-    event.preventDefault()
   }
 
   handleOnClick(event) {
@@ -44,20 +39,15 @@ class Dashboard extends Component {
                     <div class="space">
                     <p class="space-title">Create a new space</p>
                     <p class="space-content">A space lets you collaborate on apps and storage.</p>
-
                     <Link prefetch href="/new-space">
                       <a className="space-btn">
                         Create a space
                       </a>
                     </Link>
                     </div>
-
-
                   </div>
-
                 </div>
               </div>
-
               <div class="level-right">
                 <Link href="/new-app">
                   <p class="level-item"><a class="button dashboard-button">New</a></p>
@@ -67,6 +57,35 @@ class Dashboard extends Component {
         </div>
       </div>
       <div class="dashboard-body">
+        <nav class="breadcrumb has-dot-separator dashboard-body-nav" aria-label="breadcrumbs">
+          <div className="container">
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><Link href="/usage"><a>Usage</a></Link></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#" aria-current="page">Breadcrumb</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div className="container">
+          <h1 class="dashboard-body-head">Apps</h1>
+          <div className="dashboard-app">
+            <Link href="/app-page"><p class="dashboard-app-head">Docassemble</p></Link>
+            <div class="dashboard-app-metadata">
+            <p class="dashboard-app-date">May 5, 2020 at 5:45 PM</p>
+            <p class="dashboard-app-region">Asia-Pacific East</p>
+            </div>
+          </div>
+          <div className="dashboard-app">
+            <p class="dashboard-app-head">Metabase</p>
+            <div class="dashboard-app-metadata">
+            <p class="dashboard-app-date">May 1, 2020 at 2:45 PM</p>
+            <p class="dashboard-app-region">Asia-Pacific East</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </Layout>
     )

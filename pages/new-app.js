@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/userLayout'
 import {newApp} from '../utils/auth'
 
 class NewApp extends Component {

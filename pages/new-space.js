@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/userLayout'
 import {newSpace} from '../utils/auth'
 import Select from 'react-select';
 

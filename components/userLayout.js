@@ -33,9 +33,6 @@ export default ({ children }) => {
           </div>
           <div id="navbarmenu" className="navbar-menu">
             <div className="navbar-start">
-              <Link prefetch href="/">
-                <a className="navbar-item">Home</a>
-              </Link>
             </div>
             <div className="navbar-item">
               <input class="input search" type="text" placeholder="Find your apps and resources"/>
@@ -50,10 +47,40 @@ export default ({ children }) => {
       </header>
       {children}
       <footer className="footer">
-        <div className="content has-text-centered">
-          <span>I'm the footer</span>
+      <div class="container footer-container">
+        <div className="columns footer-content">
+          <div className="column">
+            <p className="footer-head">Company</p>
+            <p><a className="footer-link">Home</a></p>
+            <p><a className="footer-link">About</a></p>
+            <p><a className="footer-link">Careers</a></p>
+            <p><a className="footer-link">Partners</a></p>
+            <p><a className="footer-link">Blog</a></p>
+          </div>
+          <div className="column">
+            <p className="footer-head">Product</p>
+            <p><a className="footer-link">Pricing</a></p>
+            <p><a className="footer-link">Marketplace</a></p>
+          </div>
+          <div className="column">
+            <p className="footer-head">Education</p>
+            <p><a className="footer-link">Documentation</a></p>
+          </div>
+          <div className="column">
+            <p className="footer-head">More</p>
+            <p><a className="footer-link">Security</a></p>
+            <p><a className="footer-link">Contact Us</a></p>
+          </div>
+          <div className="column">
+            <p className="footer-head">Legal</p>
+            <p><a className="footer-link">Privacy Policy</a></p>
+            <p><a className="footer-link">Terms of Service</a></p>
+            <p><a className="footer-link">SLA</a></p>
+          </div>
         </div>
-      </footer>
+        <p>Copyright © 2020 Lexio Inc. All rights reserved.</p>
+      </div>
+    </footer>
     </div>
   )
 }
