@@ -60,10 +60,9 @@ class Dashboard extends Component {
         <nav class="breadcrumb has-dot-separator dashboard-body-nav" aria-label="breadcrumbs">
           <div className="container">
             <ul>
-              <li><a href="#">Overview</a></li>
+              <li><Link href="/dashboard"><a>Overview</a></Link></li>
               <li><Link href="/usage"><a>Usage</a></Link></li>
               <li><a href="#">Settings</a></li>
-              <li><a href="#" aria-current="page">Breadcrumb</a></li>
             </ul>
           </div>
         </nav>

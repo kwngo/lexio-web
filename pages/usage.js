@@ -32,6 +32,16 @@ const Usage = () => (
       </div>
     </div>
     <div class="dashboard-body">
+      <nav class="breadcrumb has-dot-separator dashboard-body-nav" aria-label="breadcrumbs">
+        <div className="container">
+          <ul>
+            <li><Link href="/dashboard"><a>Overview</a></Link></li>
+            <li><Link href="/usage"><a>Usage</a></Link></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </div>
+      </nav>
+
       <div class="container">
       <h1 className="chart-title">CPU</h1>
       <div class="chart">
