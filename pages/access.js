@@ -2,6 +2,7 @@ import { Component } from 'react'
 import Layout from '../components/userLayout'
 import Link from 'next/link'
 import {newApp} from '../utils/auth'
+import OverviewLayout from "../components/overview-layout"
 
 class Access extends Component {
   constructor(props) {
@@ -15,21 +16,7 @@ class Access extends Component {
   render() {
     return (
       <Layout>
-        <div class="access-page">
-        <nav class="breadcrumb has-dot-separator dashboard-body-nav" aria-label="breadcrumbs">
-          <div className="container">
-            <ul>
-              <li><Link href="/dashboard"><a>Overview</a></Link></li>
-              <li><Link href="/usage"><a>Usage</a></Link></li>
-              <li><Link href="/activity"><a>Activity</a></Link></li>
-              <li><Link href="/access"><a>Access</a></Link></li>
-              <li><a href="#">Settings</a></li>
-            </ul>
-          </div>
-        </nav>
-
-
-        <div class="container">
+        <OverviewLayout>
           <table class="table access-table">
           <thead>
             <tr>
@@ -53,8 +40,7 @@ class Access extends Component {
           <input class="input" type="text" placeholder="Email addresses" />
           <button class="button" type="submit">Add collaborator</button>
         </form>
-        </div>
-        </div>
+        </OverviewLayout>
       </Layout>
     )
 

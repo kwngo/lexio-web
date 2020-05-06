@@ -1,7 +1,7 @@
 import Layout from '../components/userLayout'
 import Link from 'next/link'
 import {data, diskData, memoryData } from '../data'
-
+import OverviewLayout from "../components/overview-layout"
 
 import { ResponsiveLine } from '@nivo/line'
 
@@ -12,39 +12,7 @@ import config from '../components/Chart/config'
 
 const Usage = () => (
   <Layout>
-    <div class="dashboard-head">
-      <div class="container">
-        <nav class="sub-navbar level">
-            <div class="level-left">
-              <div class="level-item">
-                <p className="button team-name">
-                Team name
-                </p>
-              </div>
-            </div>
-
-            <div class="level-right">
-              <Link href="/new-app">
-                <p class="level-item"><a class="button dashboard-button">New</a></p>
-              </Link>
-            </div>
-        </nav>
-      </div>
-    </div>
-    <div class="dashboard-body">
-      <nav class="breadcrumb has-dot-separator dashboard-body-nav" aria-label="breadcrumbs">
-        <div className="container">
-          <ul>
-            <li><Link href="/dashboard"><a>Overview</a></Link></li>
-            <li><Link href="/usage"><a>Usage</a></Link></li>
-            <li><Link href="/activity"><a>Activity</a></Link></li>
-            <li><Link href="/access"><a>Access</a></Link></li>
-            <li><a href="#">Settings</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="container">
+    <OverviewLayout>
       <h1 className="chart-title">CPU</h1>
       <div class="chart">
         <ResponsiveLine
@@ -230,10 +198,8 @@ const Usage = () => (
             }
         ]}
         />
-      </div>
-
-      </div>
-    </div>
+        </div>
+    </OverviewLayout>
   </Layout>
 
 )
