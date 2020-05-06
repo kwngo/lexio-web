@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import Layout from '../components/userLayout'
-import Link from 'next/Link'
+import Link from 'next/link'
 import {newApp} from '../utils/auth'
 
 class Access extends Component {
