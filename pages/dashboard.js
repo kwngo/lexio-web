@@ -26,25 +26,27 @@ class Dashboard extends Component {
     <Layout>
       <OverviewLayout>
         <h1 class="dashboard-body-head">Apps</h1>
-        <h2 class="dashboard-body-space-head">Client space 1</h2>
-        <div className="dashboard-app">
-          <div class="dashboard-app-head">
-          <Link href="/app-page"><a class="dashboard-app-head">Docassemble</a></Link>
-          <a class="dashboard-app-delete-btn">Delete</a>
+        <div className="space-block">
+          <h2 class="dashboard-body-space-head">Client space 1</h2>
+          <div className="dashboard-app">
+            <div class="dashboard-app-head">
+            <Link href="/app-page"><a class="dashboard-app-head">Docassemble</a></Link>
+            <a class="dashboard-app-delete-btn">Delete</a>
+            </div>
+            <div class="dashboard-app-metadata">
+            <p class="dashboard-app-date">May 5, 2020 at 5:45 PM</p>
+            <p class="dashboard-app-region">Asia-Pacific East</p>
+            </div>
           </div>
-          <div class="dashboard-app-metadata">
-          <p class="dashboard-app-date">May 5, 2020 at 5:45 PM</p>
-          <p class="dashboard-app-region">Asia-Pacific East</p>
-          </div>
-        </div>
-        <div className="dashboard-app">
-          <div class="dashboard-app-head">
-          <a class="dashboard-app-head">Metabase</a>
-          <a class="dashboard-app-delete-btn">Delete</a>
-          </div>
-          <div class="dashboard-app-metadata">
-          <p class="dashboard-app-date">May 1, 2020 at 2:45 PM</p>
-          <p class="dashboard-app-region">Asia-Pacific East</p>
+          <div className="dashboard-app">
+            <div class="dashboard-app-head">
+            <a class="dashboard-app-head">Metabase</a>
+            <a class="dashboard-app-delete-btn">Delete</a>
+            </div>
+            <div class="dashboard-app-metadata">
+            <p class="dashboard-app-date">May 1, 2020 at 2:45 PM</p>
+            <p class="dashboard-app-region">Asia-Pacific East</p>
+            </div>
           </div>
         </div>
       </OverviewLayout>

@@ -63,6 +63,19 @@ class NewSpace extends Component {
                 </div>
               </div>
               <div class="field">
+                <label class="label">Use space as template:</label>
+                <div class="control">
+                  <div className="select is-primary">
+                    <select className="select-item">
+                      <option>None</option>
+                      <option>Client space 1</option>
+                      <option>Client space 2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
                 <div class="control">
                   <button class="button" type="submit">Create space</button>
                 </div>
