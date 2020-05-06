@@ -36,8 +36,41 @@ class Access extends Component {
           </tbody>
           </table>
 
-        <form>
-          <input class="input" type="text" placeholder="Email addresses" />
+        <h1 class="access-form-head">Add a collaborator</h1>
+        <form className="access-form">
+          <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Email addresses" />
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Role</label>
+              <div class="control">
+                <div className="select is-primary">
+                  <select className="select-item">
+                    <option>Admin</option>
+                    <option>Write</option>
+                    <option>Read</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Space</label>
+              <div class="control">
+                <div className="select is-primary">
+                  <select className="select-item">
+                    <option>Client space 1</option>
+                    <option>Client space 2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
           <button class="button" type="submit">Add collaborator</button>
         </form>
         </OverviewLayout>

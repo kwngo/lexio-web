@@ -50,6 +50,7 @@ class NewSpace extends Component {
                 </div>
               </div>
               <div class="field">
+                <label class="label">Collaborators</label>
                 <div class="control">
                   <Select
                     defaultValue={[users[1]]}

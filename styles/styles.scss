@@ -100,10 +100,24 @@ body {
   border-bottom: 1px solid #f1f1f1;
 }
 
+.dashboard-body-space-head {
+  font-size: 1.4em;
+}
+
 .dashboard-app-head {
+  color: #222;
+  display: flex;
+  justify-content: space-between;
   font-size: 1.1em;
   cursor: pointer;
-  margin-bottom: 1em;
+}
+
+.dashboard-app-delete-btn {
+  font-size: 0.8em;
+  color: #F24E4E;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  border: 1px solid #F24E4E;
 }
 
 .dashboard-app-date, .dashboard-app-region {
@@ -114,6 +128,7 @@ body {
 .dashboard-app-metadata {
   display: flex;
   justify-content: space-between;
+  padding-top: 1.5em;
 }
 .sub-navbar {
   position: relative;
@@ -135,6 +150,7 @@ body {
 
 .dashboard-body-head {
   font-size: 1.4em;
+  margin-bottom: 1.4em;
 
 }
 
@@ -421,4 +437,12 @@ nav.breadcrumb li a {
   color: #888;
   font-size: 0.9em;
   font-weight: 500;
+}
+
+form.access-form {
+}
+
+.access-form-head {
+  font-size: 1.4em;
+  padding: 1em 0;
 }
