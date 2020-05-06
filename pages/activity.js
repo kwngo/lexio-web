@@ -1,42 +1,11 @@
 import Layout from '../components/userLayout'
 import Link from 'next/link'
+import OverviewLayout from "../components/overview-layout"
 
 
 const AppPage = () => (
   <Layout>
-    <div class="dashboard-head">
-      <div class="container">
-        <nav class="sub-navbar level">
-            <div class="level-left">
-              <div class="level-item">
-                <span className="team-name">
-                Team name
-                </span>
-              </div>
-            </div>
-
-            <div class="level-right">
-              <Link href="/new-app">
-                <p class="level-item"><a class="button">New</a></p>
-              </Link>
-            </div>
-        </nav>
-      </div>
-    </div>
-    <div class="app-page-body">
-      <nav class="breadcrumb has-dot-separator dashboard-body-nav" aria-label="breadcrumbs">
-        <div className="container">
-          <ul>
-            <li><Link href="/dashboard"><a>Overview</a></Link></li>
-            <li><Link href="/usage"><a>Usage</a></Link></li>
-            <li><Link href="/activity"><a>Activity</a></Link></li>
-            <li><Link href="/access"><a>Access</a></Link></li>
-            <li><a href="#">Settings</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="container">
+    <OverviewLayout>
         <div class="columns">
             <div class="column is-half">
               <h2 className="activity-heading">Latest Activity</h2>
@@ -68,8 +37,7 @@ const AppPage = () => (
 
             </div>
         </div>
-      </div>
-    </div>
+      </OverviewLayout>
   </Layout>
 
 )
