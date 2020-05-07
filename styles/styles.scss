@@ -15,8 +15,7 @@ body {
 
 .app {
   margin: 0 auto;
-  width: 80%;
-  height: 250px;
+  min-height: 250px;
   padding: 1em;
   cursor: pointer;
   border: 1px solid #d5d5d5;
@@ -113,7 +112,7 @@ body {
 }
 
 .dashboard-app-delete-btn {
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #F24E4E;
   padding: 0.5em 1em;
   border-radius: 4px;
@@ -445,4 +444,42 @@ form.access-form {
 .access-form-head {
   font-size: 1.4em;
   padding: 1em 0;
+}
+
+.marketplace-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.marketplace-detail-body {
+  padding: 1em 0;
+}
+
+.marketplace-detail-title {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.marketplace-detail-head {
+  font-size: 1.2em;
+  padding: 2em 0;
+  font-weight: 600;
+}
+
+.marketplace-detail-btn {
+  background: #2C6175;
+  color: #FFF;
+  padding: 1em 2em;
+  border-radius: 4px;
+}
+
+.marketplace-table {
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  thead {
+    background: #EDF9F5;
+  }
+  td {
+    padding: 1em 1em;
+  }
 }

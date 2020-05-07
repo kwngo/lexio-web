@@ -31,21 +31,21 @@ class Dashboard extends Component {
           <div className="dashboard-app">
             <div class="dashboard-app-head">
             <Link href="/app-page"><a class="dashboard-app-head">Docassemble</a></Link>
-            <a class="dashboard-app-delete-btn">Delete</a>
+            <a class="dashboard-app-delete-btn">Delete app</a>
             </div>
             <div class="dashboard-app-metadata">
-            <p class="dashboard-app-date">May 5, 2020 at 5:45 PM</p>
-            <p class="dashboard-app-region">Asia-Pacific East</p>
+            <p class="dashboard-app-date">Updated: May 5, 2020 at 5:45 PM</p>
+            <p class="dashboard-app-region">Region: Asia-Pacific East</p>
             </div>
           </div>
           <div className="dashboard-app">
             <div class="dashboard-app-head">
             <a class="dashboard-app-head">Metabase</a>
-            <a class="dashboard-app-delete-btn">Delete</a>
+            <a class="dashboard-app-delete-btn">Delete app</a>
             </div>
             <div class="dashboard-app-metadata">
-            <p class="dashboard-app-date">May 1, 2020 at 2:45 PM</p>
-            <p class="dashboard-app-region">Asia-Pacific East</p>
+            <p class="dashboard-app-date">Updated: May 1, 2020 at 2:45 PM</p>
+            <p class="dashboard-app-region">Region: Asia-Pacific East</p>
             </div>
           </div>
         </div>

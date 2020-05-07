@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 const Marketplace = () => (
   <Layout>
-    <div className="container">
+    <div className="marketplace-container">
       <div className="page">
       <div class="columns">
         <div class="column">
-          <Link href="/dashboard" passHref>
+          <Link href="/marketplace-detail" passHref>
           <div className="app">
             <div className="app-logo">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNCNBMWluLTKrCfX2hFSc-brxMCZ3sqiWd63hFAlFFo8uGRENO&usqp=CAU" width="80px" className="logo-center"/>
@@ -27,10 +27,8 @@ const Marketplace = () => (
             </div>
         </div>
         <div class="column">
-          Third column
         </div>
         <div class="column">
-          Fourth column
         </div>
       </div>
     </div>

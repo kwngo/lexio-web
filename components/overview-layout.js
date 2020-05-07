@@ -35,6 +35,7 @@ class OverviewLayout extends Component {
                     <div class="popup-heading">
                     <div class="space-head">Spaces</div>
                     <div class="space-item">Client space 1</div>
+                    <div class="space-item">Client space 2</div>
                     </div>
                     <div class="space">
                     <p class="space-title">Create a new space</p>
@@ -49,7 +50,7 @@ class OverviewLayout extends Component {
                 </div>
               </div>
               <div class="level-right">
-                <Link href="/new-app">
+                <Link href="/marketplace">
                   <p class="level-item"><a class="button dashboard-button">New app</a></p>
                 </Link>
               </div>
@@ -64,6 +65,7 @@ class OverviewLayout extends Component {
               <li><Link href="/usage"><a>Usage</a></Link></li>
               <li><Link href="/activity"><a>Activity</a></Link></li>
               <li><Link href="/access"><a>Access</a></Link></li>
+              <li><Link href="/settings"><a>Settings</a></Link></li>
             </ul>
           </div>
         </nav>
