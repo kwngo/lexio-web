@@ -5,6 +5,7 @@ const Marketplace = () => (
   <Layout>
     <div className="marketplace-container">
       <div className="page">
+        <h1 class="marketplace-title">Marketplace</h1>
       <div class="columns">
         <div class="column">
           <Link href="/marketplace-detail" passHref>

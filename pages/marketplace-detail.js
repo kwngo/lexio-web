@@ -6,9 +6,16 @@ const AppPage = () => (
   <Layout>
     <div class="marketplace-detail-body">
       <div class="container">
-        <div class="columns">
-          <div class="column is-two-thirds">
+          <div class="marketplace-detail-header">
+            <div>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNCNBMWluLTKrCfX2hFSc-brxMCZ3sqiWd63hFAlFFo8uGRENO&usqp=CAU"/>
+            </div>
+            <div>
+            <Link href="/new-app">
+              <a className="marketplace-detail-btn">Install docassemble</a>
+            </Link>
+            </div>
+          </div>
             <h1 className="marketplace-detail-title">Docassemble</h1>
             <h2 className="marketplace-detail-head">Description</h2>
             <p>Docassemble is a platform for creating mobile-friendly web applications called Interviews that ask one question at a time in order to reach an end point. This end point may be the presentation of advice, the creation of a signed document, the submission of an application, or something else.</p>
@@ -90,13 +97,6 @@ const AppPage = () => (
             </table>
 
           </div>
-          <div class="column">
-            <Link href="/new-app">
-              <a className="marketplace-detail-btn">Install docassemble</a>
-            </Link>
-          </div>
-        </div>
-      </div>
     </div>
   </Layout>
 

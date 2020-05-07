@@ -467,6 +467,7 @@ form.access-form {
 }
 
 .marketplace-detail-btn {
+  display: block;
   background: #2C6175;
   color: #FFF;
   padding: 1em 2em;
@@ -482,4 +483,16 @@ form.access-form {
   td {
     padding: 1em 1em;
   }
+}
+
+.marketplace-title {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 2em;
+}
+
+.marketplace-detail-header {
+  display: flex;
+  justify-content: space-between;
 }
