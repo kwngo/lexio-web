@@ -25,9 +25,9 @@ class Dashboard extends Component {
     return (
     <Layout>
       <OverviewLayout>
-        <h1 class="dashboard-body-head">Apps</h1>
+        <h1 class="dashboard-body-head">Client space 1</h1>
         <div className="space-block">
-          <h2 class="dashboard-body-space-head">Client space 1</h2>
+          <h2 class="dashboard-body-space-head">Apps</h2>
           <div className="dashboard-app">
             <div class="dashboard-app-head">
             <Link href="/app-page"><a class="dashboard-app-head">Docassemble</a></Link>
