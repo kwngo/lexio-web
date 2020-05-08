@@ -1,5 +1,8 @@
 import Router from "next/router";
 
+export const newSpace = () => {
+  Router.push('/dashboard')
+}
 export const register = () => {
   Router.push('/dashboard')
 }

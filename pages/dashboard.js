@@ -1,32 +1,60 @@
+import {Component} from 'react'
 import Layout from '../components/userLayout'
 import Link from 'next/link'
+import onClickOutside from "react-onclickoutside"
+import OverviewLayout from "../components/overview-layout"
 
 
-const Dashboard = () => (
-  <Layout>
-    <div class="dashboard-head">
-      <div class="container">
-        <nav class="sub-navbar level">
-            <div class="level-left">
-              <div class="level-item">
-                <p className="button team-name">
-                Team name
-                </p>
-              </div>
+class Dashboard extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {selected: 'Overview', open: false}
+    this.handleOnClick = this.handleOnClick.bind(this)
+    this.handleClickOutside = this.handleClickOutside.bind(this)
+  }
+
+  handleOnClick(event) {
+    this.setState({open: !this.state.open})
+  }
+
+  handleClickOutside(event) {
+    this.setState({open: false})
+  }
+
+  render() {
+    return (
+    <Layout>
+      <OverviewLayout>
+        <h1 class="dashboard-body-head">Client space 1</h1>
+        <div className="space-block">
+          <h2 class="dashboard-body-space-head">Apps</h2>
+          <div className="dashboard-app">
+            <div class="dashboard-app-head">
+            <Link href="/app-page"><a class="dashboard-app-head">Docassemble</a></Link>
+            <a class="dashboard-app-delete-btn">Delete app</a>
             </div>
-
-            <div class="level-right">
-              <Link href="/new-app">
-                <p class="level-item"><a class="button dashboard-button">New</a></p>
-              </Link>
+            <div class="dashboard-app-metadata">
+            <p class="dashboard-app-date">Updated: May 5, 2020 at 5:45 PM</p>
+            <p class="dashboard-app-region">Region: Asia-Pacific East</p>
             </div>
-        </nav>
-      </div>
-    </div>
-    <div class="dashboard-body">
-    </div>
-  </Layout>
+          </div>
+          <div className="dashboard-app">
+            <div class="dashboard-app-head">
+            <a class="dashboard-app-head">Metabase</a>
+            <a class="dashboard-app-delete-btn">Delete app</a>
+            </div>
+            <div class="dashboard-app-metadata">
+            <p class="dashboard-app-date">Updated: May 1, 2020 at 2:45 PM</p>
+            <p class="dashboard-app-region">Region: Asia-Pacific East</p>
+            </div>
+          </div>
+        </div>
+      </OverviewLayout>
+    </Layout>
+    )
 
-)
+  }
 
-export default Dashboard
+}
+
+export default onClickOutside(Dashboard)

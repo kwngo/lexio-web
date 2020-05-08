@@ -1,6 +1,8 @@
 // We can import bulma into the project using Sass.
 @import "../node_modules/nprogress/nprogress.css";
 @import "../node_modules/bulma/bulma.sass";
+@import "../components/Chart/chart.css";
+@import"../node_modules/react-dropdown/style.css";
 
 body {
   font-size: 0.9em;
@@ -13,8 +15,7 @@ body {
 
 .app {
   margin: 0 auto;
-  width: 80%;
-  height: 250px;
+  min-height: 250px;
   padding: 1em;
   cursor: pointer;
   border: 1px solid #d5d5d5;
@@ -88,15 +89,68 @@ body {
 }
 
 .dashboard-head {
+  background: #fafafa;
   border-bottom: 1px solid #F1F1F1;
   padding: 0.5em 0;
 }
+
+.dashboard-app {
+  padding: 3em 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.dashboard-body-space-head {
+  font-size: 1.3em;
+}
+
+.dashboard-app-head {
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.dashboard-app-delete-btn {
+  font-size: 0.7em;
+  color: #F24E4E;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  border: 1px solid #F24E4E;
+}
+
+.dashboard-app-date, .dashboard-app-region {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.dashboard-app-metadata {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5em;
+}
 .sub-navbar {
+  position: relative;
   .container {
     width: 80%;
   }
-  background: #fff;
-  padding: 0.5em 0;
+}
+
+.dashboard-body {
+  padding-bottom: 3em;
+  min-height: 500px;
+}
+
+.dashboard-body-nav {
+  font-size: 1em;
+  padding: 1em 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.dashboard-body-head {
+  font-size: 1.4em;
+  margin-bottom: 1.4em;
+
 }
 
 .team-name {
@@ -112,7 +166,7 @@ body {
 
 .navbar .input {
   background: #AADAD9;
-  color: #222;
+  color: #2C6175;
   border-radius: 3px;
   border: 1px solid #2C6175;
   &::placeholder {
@@ -187,7 +241,7 @@ body {
   width: 100%;
 }
 
-.container { 
+.container {
   width: 70%;
 }
 
@@ -203,14 +257,14 @@ body {
 }
 
 .app-page-body {
-  padding: 2em 0;
+  padding-bottom: 2em;
 }
 
 .app-page-activity {
   margin: 0;
 }
 .activity-heading {
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
   font-weight: 600;
 }
 .app-page-time {
@@ -220,6 +274,7 @@ body {
 .home-heading {
   font-weight: 600;
   font-size: 1.2em;
+  margin-bottom: 1em;
 }
 
 .home-context {
@@ -232,6 +287,7 @@ body {
   height: 400px;
   .title{
     text-align: center;
+    margin-bottom: 2em;
   }
 }
 
@@ -254,4 +310,190 @@ body {
     border: 1px solid #2C6175;
     opacity: 0.75;
   }
+}
+
+.footer-container {
+  width: 65%;
+}
+
+.footer-content {
+  padding: 1em 0;
+}
+
+.footer-head {
+}
+
+.footer-link {
+  display: block;
+  color: #888;
+  margin: 0.5em 0;
+}
+
+.chart-title {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.popup-hidden {
+  display: none;
+}
+
+.popup {
+  position: absolute;
+  left: 0;
+  top: 35px;
+  width: 300px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  z-index: 100;
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.popup-heading {
+  padding: 0.5em 1em;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.space {
+  padding: 1em 1em;
+}
+.space-head {
+  font-size: 0.8em;
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.space-owner {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: top center;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+
+}
+
+.dropdown-selected {
+  color: #555;
+  background: #f1f1f1;
+  border-radius: 3px;
+  padding: 0.5em;
+  font-weight: 600;
+}
+
+.space-item {
+  background: #f9f9f9;
+  padding: 0.5em;
+  cursor: pointer;
+  &:hover {
+    background: #f1f1f1;
+  }
+}
+
+.space-title {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.space-content {
+  margin: 0 auto;
+  width: 200px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.space-btn {
+  display: block;
+  color: #555;
+  background: #f9f9f9;
+  text-align: center;
+  padding: 0.5em 0;
+  margin-top: 1em;
+}
+
+nav.breadcrumb li a {
+  color: #888;
+}
+
+.access-page {
+  padding-bottom: 2em;
+  min-height: 500px;
+}
+.access-table {
+  width: 100%;
+  color: #888;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+form.access-form {
+}
+
+.access-form-head {
+  font-size: 1.4em;
+  padding: 1em 0;
+}
+
+.marketplace-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.marketplace-detail-body {
+  padding: 1em 0;
+}
+
+.marketplace-detail-title {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.marketplace-detail-head {
+  font-size: 1.2em;
+  padding: 2em 0;
+  font-weight: 600;
+}
+
+.marketplace-detail-btn {
+  display: block;
+  background: #2C6175;
+  color: #FFF;
+  padding: 1em 1.5em;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.marketplace-table {
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  thead {
+    background: #EDF9F5;
+  }
+  td {
+    padding: 1em 1em;
+  }
+}
+
+.marketplace-title {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 2em;
+}
+
+.marketplace-detail-header {
+  display: flex;
+  justify-content: space-between;
 }

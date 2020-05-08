@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/userLayout'
 import {newApp} from '../utils/auth'
 
 class NewApp extends Component {
@@ -37,16 +37,29 @@ class NewApp extends Component {
                 </div>
               </div>
               <div class="field">
-                <label class="label">Choose an app</label>
+                <label class="label">Installing app</label>
                 <div class="control">
                   <div className="select is-primary">
-                    <select className="select-item">
+                    <select className="select-item" disabled>
                       <option>Docassemble</option>
-                      <option>Metabase</option>
                     </select>
                   </div>
                 </div>
               </div>
+              <div class="field">
+                <label class="label">Choose a Plan</label>
+                <div class="control">
+                  <div className="select is-primary">
+                    <select className="select-item">
+                      <option>Hobby - $5/month</option>
+                      <option>Micro - $20/month</option>
+                      <option>Standard - $40/month</option>
+                      <option>Pro - $100/month</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
               <div class="field">
                 <div class="control">
                   <button class="button" type="submit">Create app</button>
