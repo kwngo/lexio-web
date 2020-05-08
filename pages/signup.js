@@ -54,7 +54,7 @@ class Signup extends Component {
     const team_name = this.state.teamName
 
     try {
-      const response = await fetch(process.env.BASE_API_URL + "register", {
+      const response = await fetch(`${process.env.BASE_API_URL}/register`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({username, email, first_name, last_name, team_name, password, password_confirmation})
