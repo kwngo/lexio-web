@@ -28,7 +28,7 @@ class Login extends Component {
     const email = this.state.email
     const password = this.state.password
     try {
-      const response = await fetch(process.env.BASE_API_URL + "/authenticate", {
+      const response = await fetch(process.env.BASE_API_URL + "authenticate", {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         credentials: 'same-origin',
