@@ -30,7 +30,7 @@ class Dashboard extends Component {
           <h2 class="dashboard-body-space-head">Apps</h2>
           <div className="dashboard-app">
             <div class="dashboard-app-head">
-            <Link href="/app-page"><a class="dashboard-app-head">Docassemble</a></Link>
+            <a class="dashboard-app-head">Docassemble</a>
             <a class="dashboard-app-delete-btn">Delete app</a>
             </div>
             <div class="dashboard-app-metadata">
