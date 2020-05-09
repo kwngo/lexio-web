@@ -1,5 +1,8 @@
 const withSass = require('@zeit/next-sass')
 module.exports = {
   target: 'serverless',
-  ...withSass()
+  ...withSass(),
+  env: {
+    BASE_API_URL: process.env.BASE_API_URL
+  }
 }
