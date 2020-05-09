@@ -14,5 +14,5 @@ export const logout = () => {
   Router.push("/login");
 };
 export const newApp = () => {
-  Router.push('/app-page')
+  Router.push('/dashboard')
 }
