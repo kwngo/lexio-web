@@ -28,11 +28,26 @@ const Marketplace = () => (
             </div>
         </div>
         <div class="column">
+          <div className="app app-disabled">
+            <div className="app-logo">
+              <img src="https://www.huridocs.org/wp-content/uploads/2016/08/tool-01-casebox.png" width="180px" className="logo-center" />
+            </div>
+            <h4 className="title is-6">Casebox - Coming Soon</h4>
+            <p className="is-small">Casebox is a sophisticated case management solution ooriginally developed for NGO and human rights organizations.</p>
+          </div>
         </div>
         <div class="column">
+          <div className="app app-disabled">
+            <div className="app-logo">
+              <img src="https://www.veracode.com/sites/default/files/2020-03/verified-directory-arkcase.jpg" width="180px" className="logo-center" />
+            </div>
+            <h4 className="title is-6">ArkCase - Coming Soon</h4>
+            <p className="is-small">ArkCase provides a low-code adaptive case management / digital transformation platform that is dynamic to support your business requirements.</p>
+          </div>
         </div>
+
       </div>
-    </div>
+      </div>
     </div>
   </Layout>
 
