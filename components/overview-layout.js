@@ -65,7 +65,6 @@ class OverviewLayout extends Component {
               <li><Link href="/usage"><a>Usage</a></Link></li>
               <li><Link href="/activity"><a>Activity</a></Link></li>
               <li><Link href="/access"><a>Access</a></Link></li>
-              <li><Link href="/settings"><a>Settings</a></Link></li>
             </ul>
           </div>
         </nav>

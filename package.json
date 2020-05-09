@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "heroku-postbuild": "yarn build"
-
   },
   "dependencies": {
     "@nivo/bar": "^0.61.1",
