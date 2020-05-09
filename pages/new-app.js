@@ -59,6 +59,17 @@ class NewApp extends Component {
                   </div>
                 </div>
               </div>
+              <div class="field">
+                <label class="label">Deploy to space</label>
+                <div class="control">
+                  <div className="select is-primary">
+                    <select className="select-item">
+                      <option>Client space 1</option>
+                      <option>Client space 2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
 
               <div class="field">
                 <div class="control">
