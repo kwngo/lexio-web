@@ -23,13 +23,14 @@ const Home = () => (
     </section>
     <section className="home-body">
       <div class="container">
-        <h1 class="title">
+        <h1 class="home-title">
           Deploy and scale applications seamlessly
         </h1>
+        <p class="home-subtitle">Do you want to grow like a tech startup? You can innovate quickly, safely, and scale resources on-demand by adopting the latest IT architectures. In the past, this required significant IT investments and engagement of a sizable team of network engineers. Not anymore – with automated tools on the Lexio platform, onboard advance practice-enhancing solutions smoothly and see returns on tech investments quickly. Try and buy solutions easily with our “App Store” features.</p>
       <div class="columns">
         <div class="column">
           <p class="home-heading">Infrastructure in minutes</p>
-          <p class="home-content">Spin up a managed cluster in just a few clicks. Simply specify the size and location of your worker nodes.</p>
+          <p class="home-content">Spin up a managed cluster in just a few clicks. Simplify specify the size and location of your worker nodes.</p>
         </div>
         <div class="column">
           <p class="home-heading">1-Click app marketplace</p>
@@ -37,7 +38,7 @@ const Home = () => (
         </div>
         <div class="column">
           <p class="home-heading">Global availability</p>
-          <p class="home-content">Deploy to any of our data center locations – New York, SF, London, Amsterdam, Bangalore, and more.</p>
+          <p class="home-content">Deploy to any of our data center locations – New York, SF, London, Hong Kong, Bangalore, and more.</p>
         </div>
       </div>
       </div>
