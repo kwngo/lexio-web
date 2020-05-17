@@ -41,7 +41,7 @@ const Usage = () => (
             legendOffset: -40,
             legendPosition: 'middle'
         }}
-        colors={{ scheme: 'nivo' }}
+        colors={{ scheme: 'spectral' }}
         pointSize={5}
         pointColor={{ theme: 'background' }}
         pointBorderWidth={2}
@@ -105,7 +105,7 @@ const Usage = () => (
             legendOffset: -40,
             legendPosition: 'middle'
         }}
-        colors={{ scheme: 'nivo' }}
+        colors={{ scheme: 'spectral' }}
         pointSize={5}
         pointColor={{ theme: 'background' }}
         pointBorderWidth={2}
@@ -171,7 +171,7 @@ const Usage = () => (
             legendOffset: -40,
             legendPosition: 'middle'
         }}
-        colors={{ scheme: 'nivo' }}
+        colors={{ scheme: 'spectral' }}
         pointSize={5}
         pointColor={{ theme: 'background' }}
         pointBorderWidth={2}
