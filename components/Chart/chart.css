@@ -1,6 +1,6 @@
 .chart {
- height:50vh;
- background: white;
+  height: 260px;
+  background: white;
   transition: 0.3s;
   margin: 1em 0;
 }

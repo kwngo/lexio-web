@@ -13,11 +13,13 @@ import config from '../components/Chart/config'
 const Usage = () => (
   <Layout>
     <OverviewLayout>
-      <h1 className="chart-title">CPU</h1>
+      <div className="columns">
+      <div className="column is-half">
+      <h1 className="chart-title">CPU Processing</h1>
       <div class="chart">
         <ResponsiveLine
         data={data}
-        margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
+        margin={{ top: 20, right: 20, bottom: 50, left: 60 }}
         xScale={{ type: 'point' }}
         yScale={{ type: 'linear', min: 'auto', max: '100', stacked: true, reverse: false }}
         axisTop={null}
@@ -35,12 +37,12 @@ const Usage = () => (
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'Percentage',
+            legend: 'Utilization (%)',
             legendOffset: -40,
             legendPosition: 'middle'
         }}
         colors={{ scheme: 'nivo' }}
-        pointSize={10}
+        pointSize={5}
         pointColor={{ theme: 'background' }}
         pointBorderWidth={2}
         pointBorderColor={{ from: 'serieColor' }}
@@ -49,11 +51,11 @@ const Usage = () => (
         useMesh={true}
         legends={[
             {
-                anchor: 'bottom-right',
+                anchor: 'bottom',
                 direction: 'column',
                 justify: false,
-                translateX: 100,
-                translateY: 0,
+                translateX: 10,
+                translateY: 50,
                 itemsSpacing: 0,
                 itemDirection: 'left-to-right',
                 itemWidth: 80,
@@ -75,11 +77,13 @@ const Usage = () => (
         ]}
         />
       </div>
-      <h2 className="chart-title">Disk I/O</h2>
+      </div>
+      <div className="column is-half">
+      <h2 className="chart-title">Network</h2>
       <div class="chart">
         <ResponsiveLine
         data={diskData}
-        margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
+        margin={{ top: 20, right: 20, bottom: 50, left: 60 }}
         xScale={{ type: 'point' }}
         yScale={{ type: 'linear', min: 'auto', max: '10', stacked: true, reverse: false }}
         axisTop={null}
@@ -97,12 +101,12 @@ const Usage = () => (
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'MB/s',
+            legend: 'GB/day',
             legendOffset: -40,
             legendPosition: 'middle'
         }}
         colors={{ scheme: 'nivo' }}
-        pointSize={10}
+        pointSize={5}
         pointColor={{ theme: 'background' }}
         pointBorderWidth={2}
         pointBorderColor={{ from: 'serieColor' }}
@@ -111,11 +115,11 @@ const Usage = () => (
         useMesh={true}
         legends={[
             {
-                anchor: 'bottom-right',
+                anchor: 'bottom',
                 direction: 'column',
                 justify: false,
-                translateX: 100,
-                translateY: 0,
+                translateX: 10,
+                translateY: 50,
                 itemsSpacing: 0,
                 itemDirection: 'left-to-right',
                 itemWidth: 80,
@@ -137,13 +141,17 @@ const Usage = () => (
         ]}
         />
       </div>
-      <h2 className="chart-title">Memory</h2>
+      </div>
+      </div>
+      <div className="columns">
+      <div className="column is-half">
+      <h2 className="chart-title">Storage</h2>
       <div class="chart">
         <ResponsiveLine
         data={memoryData}
-        margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
+        margin={{ top: 20, right: 20, bottom: 50, left: 60 }}
         xScale={{ type: 'point' }}
-        yScale={{ type: 'linear', min: 'auto', max: '8', stacked: true, reverse: false }}
+        yScale={{ type: 'linear', min: 'auto', max: '25', stacked: true, reverse: false }}
         axisTop={null}
         axisRight={null}
         axisBottom={{
@@ -159,12 +167,12 @@ const Usage = () => (
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'GB',
+            legend: 'Total GB',
             legendOffset: -40,
             legendPosition: 'middle'
         }}
         colors={{ scheme: 'nivo' }}
-        pointSize={10}
+        pointSize={5}
         pointColor={{ theme: 'background' }}
         pointBorderWidth={2}
         pointBorderColor={{ from: 'serieColor' }}
@@ -173,11 +181,11 @@ const Usage = () => (
         useMesh={true}
         legends={[
             {
-                anchor: 'bottom-right',
+                anchor: 'bottom',
                 direction: 'column',
                 justify: false,
-                translateX: 100,
-                translateY: 0,
+                translateX: 10,
+                translateY: 50,
                 itemsSpacing: 0,
                 itemDirection: 'left-to-right',
                 itemWidth: 80,
@@ -198,6 +206,8 @@ const Usage = () => (
             }
         ]}
         />
+        </div>
+        </div>
         </div>
     </OverviewLayout>
   </Layout>
