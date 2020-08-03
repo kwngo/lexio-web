@@ -87,34 +87,33 @@ class Signup extends Component {
           <div class="field">
             <label class="label">Username</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Last name" value={this.state.username} onChange={this.handleUsernameChange}/>
+              <input class="input" type="text" placeholder="Enter your Last name" value={this.state.username} onChange={this.handleUsernameChange}/>
             </div>
           </div>
 
           <div class="field">
             <label class="label">Email</label>
             <div class="control">
-              <input class="input" type="email" placeholder="Email address" value={this.state.email} onChange={this.handleEmailChange}/>
+              <input class="input" type="email" placeholder="Enter your email address" value={this.state.email} onChange={this.handleEmailChange}/>
             </div>
           </div>
           <div class="field">
             <label class="label">Password</label>
             <div class="control">
-              <input class="input" type="password" placeholder="Password" value={this.state.password} onChange={this.handlePasswordChange}/>
+              <input class="input" type="password" placeholder="Enter your password" value={this.state.password} onChange={this.handlePasswordChange}/>
             </div>
           </div>
           <div class="field">
             <label class="label">Password</label>
             <div class="control">
-              <input class="input" type="password" placeholder="Password confirmation" value={this.state.passwordConfirmation} onChange={this.handlePasswordConfirmationChange}/>
+              <input class="input" type="password" placeholder="Confirm your password" value={this.state.passwordConfirmation} onChange={this.handlePasswordConfirmationChange}/>
             </div>
           </div>
-
 
           <div class="field">
             <label class="label">Team name</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Team name" value={this.state.teamName} onChange={this.handleTeamNameChange}/>
+              <input class="input" type="text" placeholder="Choose a team name" value={this.state.teamName} onChange={this.handleTeamNameChange}/>
             </div>
           </div>
           <div class="field">

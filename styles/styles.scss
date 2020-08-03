@@ -4,9 +4,25 @@
 @import "../components/Chart/chart.css";
 @import"../node_modules/react-dropdown/style.css";
 
+/* include border and padding in element width and height */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-size: 0.9em;
+  font-size: 1em;
   font-family: 'Helvetica', sans-serif;
+}
+
+#body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .page {
@@ -27,7 +43,6 @@ body {
   }
 }
 .hero {
-  background: #EDF9F5;
   height: 710px;
   padding: 6em 0;
   .title {
@@ -46,8 +61,11 @@ body {
   }
 }
 .navbar.home-navbar {
-  background: #EDF9F5;
+  background: #FFF;
+  font-size: 1.1em;
+  border-bottom: #ccc 1px solid;
   .navbar-item {
+    color: #555;
     font-weight: 600;
     letter-spacing: 1px;
     &:hover {
@@ -57,7 +75,8 @@ body {
   }
   .navbar-end {
     .navbar-item a {
-      color: #333;
+      font-weight: 500;
+      color: #555;
       &:hover {
         color: #1A2c23;
         background: none;
@@ -73,16 +92,60 @@ body {
     font-weight: 600;
     &:hover {
       color: #43BD66;
+      background: none;
     }
   }
 
 }
+.main-content {
+  padding: 1em;
+}
+
+.main-heading {
+  font-size: 1.1em;
+}
+
+.main-content-section {
+  padding: 1em 0;
+}
+.main-app-row {
+  padding: 0.5em 0;
+  padding: 1em 0;
+  border-bottom: 1px solid #f2f2f2;
+  cursor: pointer;
+  .main-app-heading {
+    font-weight: 500;
+  }
+  .main-app-time {
+    color: #999;
+    font-size: 0.8em;
+  }
+
+}
+
+.app-btn {
+  color: #FFF;
+  background: #34C168; 
+  padding: 0.5em 1.5em;
+  border-radius: 3px;
+  &:hover {
+    opacity: 0.9;
+    color: #FFF
+  }
+
+}
+
 .navbar.user-navbar {
-  border-bottom: 1px solid #2C6175;
-  background: #EDF9F5;
+  background: #fff;
 
   .navbar-item {
-    color: #222;
+    color: #555;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+      color: #f9f9f9;
+      background: none;
+    }
   }
   .navbar-end {
   }
@@ -165,14 +228,18 @@ body {
 }
 
 .navbar .input {
-  background: #AADAD9;
-  color: #2C6175;
+  background: #F2F2F2;
   border-radius: 3px;
-  border: 1px solid #2C6175;
+  box-shadow: none;
+  border: none;
   &::placeholder {
-    color: #2C6175;
+    color: #666;
   }
+}
 
+.main-header {
+  padding: 0.5em 0 0.5em 0;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 
@@ -182,7 +249,7 @@ body {
 }
 
 .search {
-  width: 400px;
+  width: 750px;
 }
 
 .input, .button {
@@ -191,31 +258,33 @@ body {
 
 .input {
   &::placeholder {
-    color: #2C6175;
+    color: #ccc;
   }
   &:hover {
     border: 1px solid #43BD66;
   }
 
 }
+
 .label {
-  font-weight: 500;
-  font-size: 0.8rem;
+  font-weight: 600;
+  font-size: 0.9rem;
   letter-spacing: 1px;
 }
 .input {
   background: #FFF;
   border-radius: 3px;
-  border: 1px solid #2C6175;
+  border: 1px solid #ccc;
 }
 
 .button {
   font-weight: 600;
   width:100%;
+  background: rgb(0, 97, 235);
   color: #FFF;
-  background: #2C6175;
   border-radius: 3px;
   letter-spacing: 1px;
+  padding: 1.5em 1em;
   border: 0;
   &:hover {
     color: #fff;
@@ -517,4 +586,44 @@ form.access-form {
   font-size: 1.2em;
   text-align: center;
   margin-bottom: 3em;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink:0;
+  width:280px;
+  background: #FAFAFA;
+  padding: 1em;
+  box-shadow: inset -1px 0 0 rgba(0,0,0,.1);
+  li {
+    padding: 0.3em 0;
+  }
+  li a {
+    color: #3C3C3C;
+    &:hover {
+      color: #ccc;
+    }
+  }
+  .user {
+  }
+}
+
+.dashboard-main {
+  display:flex;
+  min-height: 100vh;
+}
+.sidebar-heading {
+  color: #999;
+  font-weight: 700;
+  margin-top: 0.5em;
+}
+
+.main {
+  flex-grow:1;
+}
+
+.brand {
+  font-weight: 700;
+  margin-bottom: 1em;
 }
