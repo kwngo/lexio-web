@@ -627,3 +627,47 @@ form.access-form {
   font-weight: 700;
   margin-bottom: 1em;
 }
+
+.modal-btn {
+  width: auto;
+  color: #FFF;
+  background: #34C168;
+  padding: 0.5em 1.5em;
+  border: 0;
+  border-radius: 3px;
+}
+.cancel-btn {
+  background: #FFF;
+  color: #555;
+  border: 1px solid #555;
+}
+
+.app-detail-links {
+  margin: 1em 0;
+}
+.app-detail-link-div {
+  padding: 0.8em 0;
+}
+.app-detail-link {
+  display: inline;
+  font-size: 0.9em;
+  padding: 0.5em 1.5em;
+  border-radius: 3px;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.form-link {
+  color: #2923D1;
+  border: 1px solid #2923D1;
+}
+.sheet-link {
+  color: #049A18;
+  border: 1px solid #049A18;
+}
+
+.doc-link {
+  color: #3E83F9;
+  border: 1px solid #3E83F9;
+}

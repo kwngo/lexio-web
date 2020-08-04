@@ -16,7 +16,7 @@ const customStyles = {
   }
 };
 
-class Dashboard extends Component {
+class All extends Component {
   constructor(props) {
     super(props)
     this.state = {selected: 'Overview', open: false, showModal: false}
@@ -49,7 +49,6 @@ class Dashboard extends Component {
           <div class="brand"><Link href="/dashboard"><a>Lexio</a></Link></div>
           <ul> 
             <li><Link href="/dashboard"><a>Home</a></Link></li>
-            <li><Link href="/clients"><a>Clients</a></Link></li>
             <li><Link href="/all"><a>All Apps</a></Link></li>
             <li><Link href="/teams"><a>Manage Teams</a></Link></li>
             <li><Link href="/settings"><a>Settings</a></Link></li>
@@ -84,21 +83,15 @@ class Dashboard extends Component {
           </header>
           <div class="main-content">
             <div class="main-content-section"> 
-              <h1 class="main-heading">Recent</h1> 
+              <h1 class="main-heading">All Apps</h1> 
                 <div class="main-app-row"> 
-                <h1 class="main-app-heading">
-                  <Link href="/app-details"><a>Intake form</a></Link>
-
-                </h1> 
+                  <h1 class="main-app-heading">Intake form</h1> 
                   <p class="main-app-time">Opened 1 hour ago</p> 
                 </div> 
-            <div class="main-app-row">
-              <h1 class="main-app-heading">Intake form</h1>
+              <div class="main-app-row">
+                <h1 class="main-app-heading">Intake form</h1>
               <p class="main-app-time">Opened 2 hours ago</p>
             </div>
-            </div>
-            <div class="main-content-section">
-              <h1 class="main-heading">Starred</h1> 
             </div>
           </div>
           <Modal
@@ -115,9 +108,22 @@ class Dashboard extends Component {
                   <input class="input" type="text" placeholder="Give your new app a name (eg. Mochi, Donut)" />
                 </div>
               </div>
+              <div class="field">
+                <label class="label">Region</label>
+                <div class="control">
+                  <div className="select is-primary">
+                    <select className="select-item">
+                      <option>Asia/Pacific</option>
+                      <option>Americas</option>
+                      <option>Europe</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
-            <button class="button modal-btn cancel-btn" onClick={this.handleCloseModal}>Cancel</button>
+
             <button class="button modal-btn" type="submit">Create new app</button>
+            <button class="button" onClick={this.handleCloseModal}>Cancel</button>
           </Modal>
         </div>
       </div>
@@ -128,4 +134,4 @@ class Dashboard extends Component {
 
 }
 
-export default Dashboard;
+export default All;
