@@ -44,21 +44,6 @@ class Dashboard extends Component {
   render() {
     return (
     <Layout>
-      <div class="dashboard-main">
-        <div class="sidebar"> 
-          <div class="brand"><Link href="/dashboard"><a>Lexio</a></Link></div>
-          <ul> 
-            <li><Link href="/dashboard"><a>Home</a></Link></li>
-            <li><Link href="/clients"><a>Clients</a></Link></li>
-            <li><Link href="/all"><a>All Apps</a></Link></li>
-            <li><Link href="/teams"><a>Manage Teams</a></Link></li>
-            <li><Link href="/settings"><a>Settings</a></Link></li>
-            <li class="sidebar-heading">Apps</li>
-            <li><Link href="/activity"><a>Intake form</a></Link></li>
-            <li><Link href="/activity"><a>Will release</a></Link></li>
-          </ul>
-          <div class="user"><Link href="#"><a>Kareem</a></Link></div>
-        </div>
         <div class="main">
           <header class="main-header">
           <nav className="navbar user-navbar" role="navigation" aria-label="main navigation">
@@ -84,21 +69,19 @@ class Dashboard extends Component {
           </header>
           <div class="main-content">
             <div class="main-content-section"> 
-              <h1 class="main-heading">Recent</h1> 
+              <h1 class="main-heading">All Apps</h1> 
                 <div class="main-app-row"> 
                 <h1 class="main-app-heading">
                   <Link href="/app-details"><a>Intake form</a></Link>
-
                 </h1> 
                   <p class="main-app-time">Opened 1 hour ago</p> 
                 </div> 
-            <div class="main-app-row">
-              <h1 class="main-app-heading">Intake form</h1>
-              <p class="main-app-time">Opened 2 hours ago</p>
-            </div>
-            </div>
-            <div class="main-content-section">
-              <h1 class="main-heading">Starred</h1> 
+              <div class="main-app-row">
+                <h1 class="main-app-heading">
+                  <Link href="/app-details"><a>Intake form</a></Link>
+                </h1> 
+                <p class="main-app-time">Opened 2 hours ago</p>
+              </div>
             </div>
           </div>
           <Modal
@@ -120,7 +103,6 @@ class Dashboard extends Component {
             <button class="button modal-btn" type="submit">Create new app</button>
           </Modal>
         </div>
-      </div>
     </Layout>
     )
 

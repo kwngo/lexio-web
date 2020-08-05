@@ -1,9 +1,10 @@
+
 import Layout from '../components/userLayout'
 import Link from 'next/link'
 
-const Teams = () => ( 
+const Clients = () => ( 
   <Layout>
   </Layout>
 )
 
-export default Teams
+export default Clients
