@@ -11,6 +11,7 @@
   "dependencies": {
     "@nivo/bar": "^0.61.1",
     "@nivo/line": "^0.61.1",
+    "@windmill/react-ui": "^0.3.2",
     "@zeit/next-sass": "^1.0.1",
     "bulma": "^0.8.2",
     "dotenv": "^8.2.0",
