@@ -6,12 +6,12 @@ import Modal from 'react-modal';
 
 const customStyles = {
   content: {
-    width: '550px',
     top: '35%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
+    padding: 0,
     transform: 'translate(-50%, -50%)'
   }
 };
@@ -91,16 +91,23 @@ class Dashboard extends Component {
            onRequestClose={this.handleCloseModal}
            shouldCloseOnOverlayClick={true}
           >
-            <div>
+            <div className="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+              </header>
+              <section class="modal-card-body">
               <div class="field">
                 <label class="label">Name</label>
                 <div class="control">
                   <input class="input" type="text" placeholder="Give your new app a name (eg. Mochi, Donut)" />
                 </div>
               </div>
+              </section>
+              <footer class="modal-card-foot">
+                <button class="button modal-btn cancel-btn" onClick={this.handleCloseModal}>Cancel</button>
+                <button class="button modal-btn" type="submit">Create new app</button>
+              </footer>
             </div>
-            <button class="button modal-btn cancel-btn" onClick={this.handleCloseModal}>Cancel</button>
-            <button class="button modal-btn" type="submit">Create new app</button>
           </Modal>
         </div>
     </Layout>

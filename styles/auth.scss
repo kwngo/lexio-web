@@ -1,0 +1,49 @@
+.auth-page {
+  position:fixed;
+  padding: 1em;
+  margin:0;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: #F9F9F9;
+}
+.auth-box {
+  width: 400px;
+  margin:0 auto;
+  padding: 2em 1.5em;
+  border-radius: 1px;
+  background: #fff;
+  margin-top: 12em;
+
+  .subtitle {
+    text-align: center;
+  }
+}
+
+.auth-box-desc {
+  font-size: 0.9em;
+  color: #999;
+  margin-bottom: 2em;
+}
+
+.auth-box-desc-wrapper {
+  text-align: center;
+}
+
+.btn-auth-google {
+  background: #4688F3;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn-auth-google-success {
+  background: #9E9F9F;
+  color: #fff;
+  cursor: none;
+}
+
+.auth-brand { 
+  font-size: 1.2em;
+}

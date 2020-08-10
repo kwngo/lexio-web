@@ -4,7 +4,7 @@ export const newSpace = () => {
   Router.push('/dashboard')
 }
 export const register = () => {
-  Router.push('/dashboard')
+  Router.push('/auth')
 }
 export const login = () => {
   Router.push('/dashboard')

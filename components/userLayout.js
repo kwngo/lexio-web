@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { parseCookies } from 'nookies'
 import '../styles/styles.scss'
 
-export default ({ children }) => {
+const UserLayout = ({ children }) => {
   /*
    * Added this to toggle the is-active class. See:
    *
@@ -35,3 +36,15 @@ export default ({ children }) => {
     </div>
   )
 }
+
+UserLayout.getInitialProps = (ctx) => {
+  const { authorization } = parseCookies(ctx);
+  const {token} = ctx.query
+  console.log("hello")
+  console.log(authorization)
+  return {
+    authorization: authorization || token,
+  };
+}
+
+export default UserLayout;
